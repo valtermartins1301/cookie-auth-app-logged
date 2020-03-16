@@ -52,13 +52,13 @@ class PrivateRoute extends React.Component {
   render() {
     const { component: Component } = this.props
 
-    if(this.state.isAuthenticated) {
+    if(!this.state.isAuthenticated) {
       navigate('/public')
       
       return <Redirect to='/public' noThrow/>
     } 
 
-    return  <Component />
+    return  <Component {...this.props} />
   } 
 }
 
