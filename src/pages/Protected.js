@@ -21,7 +21,7 @@ function ProtectedRaw(props) {
 
   React.useEffect(() => {
     async function todayLucky() {
-      axios.get('https://glacial-shelf-31721.herokuapp.com/')
+      axios.get('https://glacial-shelf-31721.herokuapp.com/', { withCredentials: true })
       .then(response => setMessage(response.data.message))
     }
 

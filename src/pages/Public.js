@@ -27,7 +27,7 @@ function PublicRaw(props) {
     <div className={props.className}>
       <img src={logo} alt="Logo" />
       <Heading>Você não está logado... =/</Heading>
-      <Subheading>Clique aqui para entrar se autenticar</Subheading>
+      <Subheading>Clique abaixo para se autenticar</Subheading>
       <Form onSubmit={handleSubmit}>
         <Input type="submit" value="Autenticar"/>
       </Form>

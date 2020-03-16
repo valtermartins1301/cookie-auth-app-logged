@@ -41,7 +41,7 @@ class PrivateRoute extends React.Component {
 
   async componentDidMount() {
     try {
-      await axios.get('https://glacial-shelf-31721.herokuapp.com/auth/')
+      await axios.get('https://glacial-shelf-31721.herokuapp.com/auth/', { withCredentials: true })
 
       this.setState({ isAuthenticated: true })
     } catch (error) {
